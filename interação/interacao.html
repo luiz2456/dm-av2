@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ <style>
+ body{
+  color:blue;
+  display:flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   background-image: url('./fundo.png');
+   justify-content: space-between;
+    margin: 15%;
+    padding:0,5rem;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-color:transparent;
+
+ }
+
+ footer{
+  background-color: black;
+  color: white ;
+ }
+ </style>
+
+  </head>
+<body>
+  <h1> Radiciação</h1>
+
+<p id="valor"></p> 
+<p id="resultado"></p>
+
+<footer>
+  produzido por lipe_sanjos
+</footer>
+<script>
+  valor = Number(window.prompt('digite o valor: '))
+  
+
+
+
+
+const numbers = [valor];
+numbers.forEach(funcao)
+
+document.getElementById("valor").innerHTML = `valor inicial: ${valor}`;
+document.getElementById("resultado").innerHTML = `radiciação do valor:  ${numbers}`;
+
+function funcao (item, index, arr) {
+  arr[index] = item *item;
+  
+
+}
+</script>
+
+</body>
+</html>
+
